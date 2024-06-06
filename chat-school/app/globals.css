@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리 등 웹킷 기반 브라우저용 */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE, 엣지 브라우저용 */
+  scrollbar-width: none; /* 파이어폭스용 */
+}
